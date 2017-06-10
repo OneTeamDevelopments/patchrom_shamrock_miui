@@ -11904,6 +11904,10 @@
 
     .line 642
     .local v6, "spn":Ljava/lang/String;
+	invoke-static/range {p0 .. p0}, Lcom/android/internal/telephony/ServiceStateTrackerInjector;->getSpn(Lcom/android/internal/telephony/ServiceStateTracker;)Ljava/lang/String;
+
+    move-result-object v6
+
     :goto_3
     move-object v8, v6
 
@@ -12390,6 +12394,10 @@
 
     move-result-object v4
 
+    invoke-static/range {p0 .. p0}, Lcom/android/internal/telephony/ServiceStateTrackerInjector;->getPlmn(Lcom/android/internal/telephony/ServiceStateTracker;)Ljava/lang/String;
+
+    move-result-object v4
+	
     .line 625
     .local v4, "plmn":Ljava/lang/String;
     invoke-static {v4}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
