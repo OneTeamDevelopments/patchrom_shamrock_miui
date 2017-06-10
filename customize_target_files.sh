@@ -8,3 +8,6 @@ OTHER_DIR=$PWD/other
 
 cp -f other/file_contexts out/target_files/META/
 rm -rf out/target_files/SYSTEM/vendor/preinstall
+
+#Added device features
+cp -f other/shamrock.xml out/target_files/SYSTEM/etc/device_features
