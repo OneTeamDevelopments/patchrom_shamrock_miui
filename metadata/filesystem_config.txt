@@ -525,6 +525,9 @@ system/etc/preloaded-classes 0 0 644 selabel=u:object_r:system_file:s0 capabilit
 system/etc/recovery-resource.dat 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/etc/sap.conf 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/etc/sec_config 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
+system/etc/sensors 0 0 755 selabel=u:object_r:system_file:s0 capabilities=0x0
+system/etc/sensors/hals.conf 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
+system/etc/sensors/sensor_def_qcomdev.conf 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/etc/sound_trigger_mixer_paths.xml 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/etc/sound_trigger_mixer_paths_wcd9306.xml 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/etc/sound_trigger_mixer_paths_wcd9330.xml 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
