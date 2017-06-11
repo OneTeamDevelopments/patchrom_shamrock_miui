@@ -5894,9 +5894,9 @@
     invoke-virtual {p0}, Lcom/android/internal/telephony/cdma/CDMAPhone;->unregisterForRuimRecordEvents()V
 
     .line 1431
-    iget-object v2, p0, Lcom/android/internal/telephony/cdma/CDMAPhone;->mMiuiIccPhoneBookInterfaceManager:Lcom/android/internal/telephony/cdma/MiuiIccPhoneBookInterfaceManager;
+    iget-object v2, p0, Lcom/android/internal/telephony/cdma/CDMAPhone;->mMiuiIccPhoneBookInterfaceManager:Lcom/android/internal/telephony/MiuiIccPhoneBookInterfaceManager;
 
-    invoke-virtual {v2, v5}, Lcom/android/internal/telephony/cdma/MiuiIccPhoneBookInterfaceManager;->updateIccRecords(Lcom/android/internal/telephony/uicc/IccRecords;)V
+    invoke-virtual {v2, v5}, Lcom/android/internal/telephony/MiuiIccPhoneBookInterfaceManager;->updateIccRecords(Lcom/android/internal/telephony/uicc/IccRecords;)V
 
     .line 1433
     :cond_2
@@ -5936,7 +5936,7 @@
     invoke-virtual {p0}, Lcom/android/internal/telephony/cdma/CDMAPhone;->registerForRuimRecordEvents()V
 
     .line 1441
-    iget-object v3, p0, Lcom/android/internal/telephony/cdma/CDMAPhone;->mMiuiIccPhoneBookInterfaceManager:Lcom/android/internal/telephony/cdma/MiuiIccPhoneBookInterfaceManager;
+    iget-object v3, p0, Lcom/android/internal/telephony/cdma/CDMAPhone;->mMiuiIccPhoneBookInterfaceManager:Lcom/android/internal/telephony/MiuiIccPhoneBookInterfaceManager;
 
     iget-object v2, p0, Lcom/android/internal/telephony/cdma/CDMAPhone;->mIccRecords:Ljava/util/concurrent/atomic/AtomicReference;
 
