@@ -6,15 +6,12 @@ ro.miui.has_real_blur=0
 # MIUI Properties
 ro.modversion=MIUI
 persist.sys.timezone=Europe/Istanbul
-ro.product.locale.language=en
-ro.product.locale.region=US
+ro.product.locale.language=tr
+ro.product.locale.region=TR
 ro.setupwizard.mode=OPTIONAL
 drm.service.enabled=true
 #enable dirac effect for speaker
 persist.audio.dirac.speaker=true
-
-#Additional Tweaks OSBUSTERS.NET
-#####
 wifi.supplicant_scan_interval=497
 power.saving.mode=1
 pm.sleep_mode=1
