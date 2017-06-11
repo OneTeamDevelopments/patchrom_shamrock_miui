@@ -25,7 +25,7 @@ local-miui-modified-apps := InCallUI TeleService SecurityCenter
 # Default configrations are HDPI for ics branch and XHDPI for jellybean branch
 local-density := XXHDPI
 
-PORT_PRODUCT := shamrock
+PORT_PRODUCT := shamrock_global
 
 # All apps need to be removed from original ZIP file
 #local-remove-apps   := 
@@ -56,6 +56,7 @@ local-pre-zip-misc:
 	$(TOOLS_DIR)/post_process_props.py out/ZIP/system/build.prop other/build.prop
 	@echo copy files
 	cp -a -rf other/system/* $(ZIP_DIR)/system/
+	cp -rf other/data/* $(ZIP_DIR)/data/miui/
 
 	@echo goodbye! miui prebuilt binaries!
 	rm -rf $(ZIP_DIR)/system/bin/app_process32_vendor

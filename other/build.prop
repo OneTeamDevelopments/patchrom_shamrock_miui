@@ -5,9 +5,6 @@ ro.miui.has_real_blur=0
 ##
 # MIUI Properties
 ro.modversion=MIUI
-persist.sys.timezone=Europe/Istanbul
-ro.product.locale.language=tr
-ro.product.locale.region=TR
 ro.setupwizard.mode=OPTIONAL
 drm.service.enabled=true
 #enable dirac effect for speaker
