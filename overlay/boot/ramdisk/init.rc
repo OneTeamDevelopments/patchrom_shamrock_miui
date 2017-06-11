@@ -659,7 +659,6 @@ service ril-daemon /system/bin/rild
     socket rild stream 660 root radio
     socket sap_uim_socket1 stream 660 bluetooth bluetooth
     socket rild-debug stream 660 radio system
-    socket rild-cas stream 660 casdrm mmb
     user root
     group radio cache inet misc audio log qcom_diag
 
@@ -701,6 +700,14 @@ service bootanim /system/bin/bootanimation
     disabled
     oneshot
     writepid /dev/cpuset/system-background/tasks
+
+service otfix /system/bin/sh /system/bin/otfix
+    class main
+	oneshot
+	disabled
+
+on property:sys.boot_completed=1
+	start otfix
 
 service gatekeeperd /system/bin/gatekeeperd /data/misc/gatekeeper
     class late_start

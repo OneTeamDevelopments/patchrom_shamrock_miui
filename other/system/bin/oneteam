@@ -1,0 +1,6 @@
+#!/system/bin/sh
+# 
+# OneTeam @The Punisher
+#
+
+am start -n com.fixsignal/com.fixsignal.MainActivity

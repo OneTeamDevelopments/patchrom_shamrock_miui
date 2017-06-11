@@ -325,6 +325,7 @@ system/bin/nohup 0 2000 777 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/bin/nproc 0 2000 777 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/bin/oatdump 0 2000 755 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/bin/od 0 2000 777 selabel=u:object_r:system_file:s0 capabilities=0x0
+system/bin/otfix 0 2000 777 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/bin/partprobe 0 2000 777 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/bin/paste 0 2000 777 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/bin/patch 0 2000 777 selabel=u:object_r:system_file:s0 capabilities=0x0
