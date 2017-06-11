@@ -65,4 +65,5 @@ local-pre-zip-misc:
 	rm -rf $(ZIP_DIR)/system/recovery-from-boot.bak
 	rm -rf $(ZIP_DIR)/system/etc/CHANGELOG-CM.txt
 	rm -rf $(ZIP_DIR)/system/lib64
+	rm -rf $(ZIP_DIR)/system/priv-app/priv-app.original
 
