@@ -67,4 +67,9 @@ local-pre-zip-misc:
 	rm -rf $(ZIP_DIR)/system/etc/CHANGELOG-CM.txt
 	rm -rf $(ZIP_DIR)/system/lib64
 	rm -rf $(ZIP_DIR)/system/priv-app/priv-app.original
+	
+	@echo use only miui sounds!
+	rm -rf $(ZIP_DIR)/system/media/audio/*
+	cp -rf $(PORT_ROOT)/miui/system/media/$(local-density)/audio/* $(ZIP_DIR)/system/media/audio
+	rm -rf $(ZIP_DIR)/system/media/audio/create_symlink_for_audio-timestamp
 
