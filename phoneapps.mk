@@ -7,15 +7,12 @@ private-phone-apps := \
 	BluetoothExt \
 	BluetoothMidiService \
 	CertInstaller \
-	HoloSpiralWallpaper \
 	KeyChain \
 	LatinIME \
 	LiveWallpapers \
-	NoiseField \
 	PacProcessor \
 	PicoTts \
 	PhaseBeam \
-	PhotoTable \
 	PrintSpooler \
 	Stk \
 	telresources \
@@ -34,10 +31,6 @@ private-phone-priv-apps := \
 	InputDevices \
 	ProxyHandler \
 	SharedStorageBackup \
-	StatementService \
 	Shell \
-	Telecom \
-	TelephonyProvider \
-	TeleService \
-	ThemesProvider
-
+	StatementService \
+	Telecom
