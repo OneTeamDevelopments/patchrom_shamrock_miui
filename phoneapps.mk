@@ -32,5 +32,4 @@ private-phone-priv-apps := \
 	ProxyHandler \
 	SharedStorageBackup \
 	Shell \
-	StatementService \
-	Telecom
+	StatementService
