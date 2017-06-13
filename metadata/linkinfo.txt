@@ -1,4 +1,3 @@
-system/vendor|/vendor
 system/app/Bluetooth/lib/arm/libbluetooth_jni.so|/system/lib/libbluetooth_jni.so
 system/app/BluetoothExt/lib/arm/libbluetooth_jni.so|/system/lib/libbluetooth_jni.so
 system/app/Gallery2/lib/arm/libjni_eglfence.so|/system/lib/libjni_eglfence.so
