@@ -1,0 +1,4 @@
+/out/*
+/temp/*
+*.zip
+/history_package/*
