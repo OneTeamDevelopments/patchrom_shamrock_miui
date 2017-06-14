@@ -170,12 +170,4 @@
     <float name="camera_front_count_down_margin">0.2482</float>
     <!-- adb reboot bootloader lock -->
     <bool name="support_bootloader_lock">true</bool>
-    <!--hidden app packagename list -->
-    <string-array name="hidden_app_packagename_list">
-        <item>com.xiaomi.market</item>
-    </string-array>
-    <!--hidden app path list -->
-    <string-array name="hidden_app_path_list">
-        <item>/system/app/MiuiSuperMarket.apk,/system/app/MiuiSuperMarket</item>
-    </string-array>
 </features>
