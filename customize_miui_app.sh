@@ -46,10 +46,6 @@ if [ $1 = "MiuiSystemUI" ];then
     $XMLMERGYTOOL $1/res/values $2/res/values
 fi
 
-if [ $1 = "Provision" ];then
-    applyPatch $1 $2
-fi
-
 if [ $1 = "TeleService" ];then
     applyPatch $1 $2
 fi

@@ -82,18 +82,6 @@ system/app/LiveWallpapersPicker 0 0 755 selabel=u:object_r:system_file:s0 capabi
 system/app/LiveWallpapersPicker/LiveWallpapersPicker.apk 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/app/LockClock 0 0 755 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/app/LockClock/LockClock.apk 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
-system/app/MaxxAudio 0 0 755 selabel=u:object_r:system_file:s0 capabilities=0x0
-system/app/MaxxAudio/MaxxAudio.apk 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
-system/app/MaxxAudio/lib 0 0 755 selabel=u:object_r:system_file:s0 capabilities=0x0
-system/app/MaxxAudio/lib/arm 0 0 755 selabel=u:object_r:system_file:s0 capabilities=0x0
-system/app/MaxxAudio/lib/arm/libEQGraphCore.so 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
-system/app/MaxxAudio/lib/arm/libEQGraphLib.so 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
-system/app/MaxxService 0 0 755 selabel=u:object_r:system_file:s0 capabilities=0x0
-system/app/MaxxService/MaxxService.apk 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
-system/app/MaxxService/lib 0 0 755 selabel=u:object_r:system_file:s0 capabilities=0x0
-system/app/MaxxService/lib/arm 0 0 755 selabel=u:object_r:system_file:s0 capabilities=0x0
-system/app/MaxxService/lib/arm/libmaxxeffectwrapper.so 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
-system/app/MaxxService/lib/arm/libosl-maxxaudio-itf.so 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/app/NoiseField 0 0 755 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/app/NoiseField/NoiseField.apk 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/app/PacProcessor 0 0 755 selabel=u:object_r:system_file:s0 capabilities=0x0
@@ -1255,6 +1243,7 @@ system/lib/content-types.properties 0 0 644 selabel=u:object_r:system_file:s0 ca
 system/lib/crtbegin_so.o 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/lib/crtend_so.o 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/lib/lib7z.so 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
+system/lib/libDiracAPI_SHARED.so 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/lib/libEGL.so 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/lib/libETC1.so 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/lib/libFFTEm.so 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
@@ -1582,6 +1571,7 @@ system/lib/modules 0 0 755 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/lib/soundfx 0 0 755 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/lib/soundfx/libaudiopreprocessing.so 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/lib/soundfx/libbundlewrapper.so 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
+system/lib/soundfx/libdirac.so 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/lib/soundfx/libdownmix.so 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/lib/soundfx/libeffectproxy.so 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/lib/soundfx/libldnhncr.so 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
@@ -2105,9 +2095,8 @@ system/vendor/bin/xtwifi-inet-agent 0 2000 755 selabel=u:object_r:system_file:s0
 system/vendor/etc 0 2000 755 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/vendor/etc/audio_effects.conf 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/vendor/etc/audio_output_policy.conf 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
-system/vendor/etc/default.mps 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/vendor/etc/diracmobile.config 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
-system/vendor/etc/maxx_conf.ini 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
+system/vendor/etc/diracmobile_4.config 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/vendor/etc/msm_irqbalance.conf 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/vendor/etc/msm_irqbalance_little_big.conf 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/vendor/etc/cne 0 2000 755 selabel=u:object_r:system_file:s0 capabilities=0x0
@@ -2934,7 +2923,6 @@ system/vendor/lib/rfsa/adsp/libscveObjectSegmentation_skel.so 0 0 644 selabel=u:
 system/vendor/lib/rfsa/adsp/libscveT2T_skel.so 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/vendor/lib/rfsa/adsp/libscveTextReco_skel.so 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/vendor/lib/soundfx 0 2000 755 selabel=u:object_r:system_file:s0 capabilities=0x0
-system/vendor/lib/soundfx/libomx-dts.so 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/vendor/lib/soundfx/libqcbassboost.so 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/vendor/lib/soundfx/libqcreverb.so 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/vendor/lib/soundfx/libqcvirt.so 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
@@ -2973,7 +2961,7 @@ system/xbin/showslab 0 2000 755 selabel=u:object_r:system_file:s0 capabilities=0
 system/xbin/simpleperf 0 2000 755 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/xbin/sqlite3 0 2000 755 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/xbin/strace 0 2000 755 selabel=u:object_r:system_file:s0 capabilities=0x0
-system/xbin/su 0 2000 755 selabel=u:object_r:su_exec:s0 capabilities=0x0
+system/xbin/su 0 2000 6755 selabel=u:object_r:su_exec:s0 capabilities=0x0
 system/xbin/taskstats 0 2000 755 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/xbin/tcpdump 0 2000 755 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/xbin/unpigz 0 2000 777 selabel=u:object_r:system_file:s0 capabilities=0x0
