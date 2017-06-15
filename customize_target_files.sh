@@ -7,6 +7,7 @@ build_prop_file=$TARGET_FILES_DIR/SYSTEM/build.prop
 OTHER_DIR=$PWD/other
 
 cp -f other/file_contexts out/target_files/META/
+cp -f other/magisk.zip out/target_files/META/
 rm -rf out/target_files/SYSTEM/vendor/preinstall
 
 #Added device features

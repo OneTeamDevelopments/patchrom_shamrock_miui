@@ -13,6 +13,18 @@ ui_print("* Powered By @The Punisher");
 ui_print("* MIUI Yukleniyor...");
 ui_print("******************************************");\n''' + edify.script[0]
 
+def PushMagisk(input_zip, output_zip, script):
+    data = input_zip.read("META/magisk.zip")
+    common.ZipWriteStr(output_zip, "magisk/magisk.zip", data)
+
+def InstallMagisk(script):
+  script.AppendExtra("package_extract_dir(\"magisk\", \"/tmp/magisk\");")
+  script.AppendExtra("run_program(\"/tmp/busybox\", \"unzip\", \"/tmp/magisk/magisk.zip\", \"META-INF/com/google/android/*\", \"-d\", \"/tmp/magisk\");")
+  script.AppendExtra("run_program(\"/sbin/sh\", \"/tmp/magisk/META-INF/com/google/android/update-binary\", \"dummy\", \"1\", \"/tmp/magisk/magisk.zip\");")
+
 def FullOTA_InstallEnd(info):
     edify = info.script
-    ModifyBegin(edify)
+    ModifyBegin(edify)	
+    script_temp = edify_generator.EdifyGenerator(3, info.script.info)
+    PushMagisk(info.input_zip, info.output_zip, script_temp)
+    InstallMagisk(edify)
