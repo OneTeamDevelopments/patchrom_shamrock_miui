@@ -3,4 +3,5 @@
 # OneTeam @The Punisher
 #
 
-am start -n com.fixsignal/com.fixsignal.MainActivity
+am start -n com.oneteam.onefix/.MainActivity
+settings put system display_temperature_mode 0

@@ -1,4 +1,5 @@
 /out/*
 /temp/*
-.delete-zip-file-when-clean
 /history_package/*
+.delete-zip-file-when-clean
+stockrom.zip
