@@ -7,6 +7,7 @@ ro.miui.has_real_blur=0
 ro.modversion=MIUI
 ro.setupwizard.mode=OPTIONAL
 drm.service.enabled=true
+qdoc.mode=1
 #enable dirac effect for speaker
 persist.audio.dirac.speaker=true
 wifi.supplicant_scan_interval=497

@@ -77,6 +77,8 @@
     <bool name="support_phone_call_noise_suppression">true</bool>
     <!--whether the device supports touch sensitive-->
     <bool name="support_touch_sensitive">false</bool>
+    <!--whether the device supports qualdev api -->
+    <bool name="support_qualdev_api">true</bool>
     <!--whether the device supports broadcom wapi-->
     <bool name="support_broadcom_wapi">true</bool>
     <bool name="support_camera_burst_shoot">true</bool>
