@@ -324,7 +324,6 @@ system/bin/nohup 0 2000 777 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/bin/nproc 0 2000 777 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/bin/oatdump 0 2000 755 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/bin/od 0 2000 777 selabel=u:object_r:system_file:s0 capabilities=0x0
-system/bin/otfix 0 2000 777 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/bin/partprobe 0 2000 777 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/bin/paste 0 2000 777 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/bin/patch 0 2000 777 selabel=u:object_r:system_file:s0 capabilities=0x0
@@ -1885,8 +1884,6 @@ system/priv-app/MediaProvider 0 0 755 selabel=u:object_r:system_file:s0 capabili
 system/priv-app/MediaProvider/MediaProvider.apk 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/priv-app/MmsService 0 0 755 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/priv-app/MmsService/MmsService.apk 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
-system/priv-app/OneFix 0 0 755 selabel=u:object_r:system_file:s0 capabilities=0x0
-system/priv-app/OneFix/OneFix.apk 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/priv-app/OneTimeInitializer 0 0 755 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/priv-app/OneTimeInitializer/OneTimeInitializer.apk 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/priv-app/PackageInstaller 0 0 755 selabel=u:object_r:system_file:s0 capabilities=0x0

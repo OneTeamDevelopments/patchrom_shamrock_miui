@@ -701,13 +701,18 @@ service bootanim /system/bin/bootanimation
     oneshot
     writepid /dev/cpuset/system-background/tasks
 
-service otfix /system/bin/sh /system/bin/otfix
+service onefl /system/bin/sh /init.one.fl.sh
     class main
-	oneshot
-	disabled
+    user root
+
+service onerl /system/bin/sh /init.one.rl.sh
+    class main
+    user root
+    oneshot
+    disabled
 
 on property:sys.boot_completed=1
-	start otfix
+    start onerl
 
 service gatekeeperd /system/bin/gatekeeperd /data/misc/gatekeeper
     class late_start
