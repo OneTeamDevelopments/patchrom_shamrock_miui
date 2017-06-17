@@ -11,7 +11,7 @@
     <!--whether install the fm app-->
     <bool name="support_fm">false</bool>
     <!--whether the device supports oldman mode-->
-    <bool name="support_oldman_mode">false</bool>
+    <bool name="support_oldman_mode">true</bool>
     <!--whether the device is dual sim card-->
     <bool name="support_dual_sim_card">true</bool>
     <!--whether the device has dual systems-->
@@ -27,13 +27,13 @@
     <!--whether the device supports interview record param-->
     <bool name="support_interview_record_param">true</bool>
     <!--whether the device supports stereo record-->
-    <bool name="support_stereo_record">false</bool>
+    <bool name="support_stereo_record">true</bool>
     <!--whether the device supports screen paper mode-->
     <bool name="support_screen_paper_mode">true</bool>
     <!--whether the device supports led light-->
     <bool name="support_led_light">true</bool>
     <!--whether the device supports button light-->
-    <bool name="support_button_light">true</bool>
+    <bool name="support_button_light">false</bool>
     <!--whether the device supports emulated storage-->
     <bool name="support_emulated_storage">true</bool>
     <!--whether the device supports internal sdcard-->
@@ -57,7 +57,7 @@
     <!--whether the device supports steps_provider-->
     <bool name="support_steps_provider">true</bool>
     <!--whether the device support hall sensor-->
-    <bool name="support_hall_sensor">false</bool>
+    <bool name="support_hall_sensor">true</bool>
     <!--whether the device supports hifi-->
     <bool name="support_hifi">false</bool>
     <!--whether the device supports agps parameters-->
@@ -89,7 +89,7 @@
     <!--whether support skin beauty in camera-->
     <bool name="support_camera_skin_beauty">true</bool>
     <!--whether support age detection in camera-->
-    <bool name="support_camera_age_detection">true</bool>
+    <bool name="support_camera_age_detection">false</bool>
     <!--whether support record location in camera-->
     <bool name="support_camera_record_location">true</bool>
     <!--whether support time watermark in camera-->
@@ -101,7 +101,7 @@
     <!--whether taking lower size panorama in camera-->
     <bool name="is_lower_size_panorama">true</bool>
     <!--whether taking lower size effect image in camera-->
-    <bool name="is_lower_size_effect">false</bool>
+    <bool name="is_lower_size_effect">true</bool>
     <!--whether support aohdr in camera-->
     <bool name="support_camera_aohdr">true</bool>
     <!--whether support high frame recording in camera-->
@@ -111,7 +111,7 @@
     <!--whether support object tracking in camera-->
     <bool name="support_object_track">true</bool>
     <!--whether support 4k recording in camera-->
-    <bool name="support_camera_4k_quality">true</bool>
+    <bool name="support_camera_4k_quality">false</bool>
     <!--whether support refocus feature in camera-->
     <bool name="support_camera_ubifocus">true</bool>
     <!--whether support audio focus recording in camera-->
@@ -133,7 +133,7 @@
     <!--whether hold blured background for effects preview in camera-->
     <bool name="is_camera_hold_blur_background">true</bool>
     <!--whether support peaking mf in camera-->
-    <bool name="support_camera_peaking_mf">false</bool>
+    <bool name="support_camera_peaking_mf">true</bool>
     <!--whether support gradienter in camera-->
     <bool name="support_camera_gradienter">true</bool>
     <!--whether scan qrcode with lower frequency in camera-->
@@ -157,11 +157,11 @@
     <!--0:not support 1:close gamut 2:close ce-->
     <integer name="screen_standard_mode">0</integer>
     <!--Flag of reduce preview size in camera(1:reduce, 0:do not reduce; 1st byte:rear camera, 2nd byte:front camera, 3rd byte:rear video, 4th byte:front video )-->
-    <integer name="camera_reduce_preview_flag">14</integer>
+    <integer name="camera_reduce_preview_flag">0</integer>
     <!--max number of burst images one time -->
     <integer name="burst_shoot_count">100</integer>
     <!--max cpu freq of the device-->
-    <integer name="cpu_max_freq">150</integer>
+    <integer name="cpu_max_freq">152</integer>
     <!--Successful flag of camera continuous auto focus  result-->
     <integer name="camera_focus_success_flag">5</integer>
     <!--b0:flash b1:hdr b2:motion b3:night-->
