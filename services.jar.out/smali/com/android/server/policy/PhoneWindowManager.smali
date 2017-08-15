@@ -7825,6 +7825,12 @@
     move-result p3
 
     .line 7689
+    invoke-virtual/range {p0 .. p1}, Lcom/android/server/policy/PhoneWindowManager;->getExtraSystemUiVisibility(Landroid/view/WindowManagerPolicy$WindowState;)I
+
+    move-result v24
+
+    or-int p3, p3, v24
+
     return p3
 
     .line 7597
@@ -23073,12 +23079,12 @@
     move-result-object v1
 
     .line 1447
-    const-string/jumbo v2, "cm_setup_wizard_completed"
+    const-string/jumbo v2, "user_setup_complete"
 
     const/4 v3, -0x2
 
     .line 1446
-    invoke-static {v1, v2, v0, v3}, Lcyanogenmod/providers/CMSettings$Secure;->getIntForUser(Landroid/content/ContentResolver;Ljava/lang/String;II)I
+    invoke-static {v1, v2, v0, v3}, Landroid/provider/Settings$Secure;->getIntForUser(Landroid/content/ContentResolver;Ljava/lang/String;II)I
 
     move-result v1
 
@@ -30253,7 +30259,51 @@
     throw v1
 .end method
 
+.method public showBootMessage(Ljava/lang/CharSequence;Z)V
+    .locals 0
+
+    .prologue
+    return-void
+.end method
+
 .method public updateBootProgress(ILandroid/content/pm/ApplicationInfo;II)V
+    .locals 2
+    .param p1, "stage"    # I
+    .param p2, "optimizedApp"    # Landroid/content/pm/ApplicationInfo;
+    .param p3, "currentAppPos"    # I
+    .param p4, "totalAppCount"    # I
+
+    .prologue
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    invoke-virtual {v0, p3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    const-string v1, ","
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    invoke-virtual {v0, p4}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    const/4 v1, 0x1
+
+    invoke-virtual {p0, v0, v1}, Lcom/android/server/policy/PhoneWindowManager;->showBootMessage(Ljava/lang/CharSequence;Z)V
+
+    return-void
+.end method
+
+.method public updateBootProgress_cm(ILandroid/content/pm/ApplicationInfo;II)V
     .locals 7
     .param p1, "stage"    # I
     .param p2, "optimizedApp"    # Landroid/content/pm/ApplicationInfo;
