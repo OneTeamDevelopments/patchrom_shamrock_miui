@@ -481,6 +481,7 @@ system/etc/fonts.xml 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/etc/gps.conf 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/etc/hosts 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/etc/init.qcom.bt.sh 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
+system/etc/init.qcom.post_boot.sh 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/etc/izat.conf 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/etc/lowi.conf 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/etc/media_codecs.xml 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
