@@ -1,0 +1,32 @@
+persist.sys.klo=on
+persist.sys.mcd_config_file=/system/etc/mcd_default.conf
+persist.sys.miui_feature_config=/system/etc/miui_feature/lite.conf
+ro.miui.has_real_blur=0
+##
+# MIUI Properties
+ro.modversion=MIUI
+ro.setupwizard.mode=OPTIONAL
+drm.service.enabled=true
+qdoc.mode=1
+#enable dirac effect for speaker
+persist.audio.dirac.speaker=true
+wifi.supplicant_scan_interval=497
+power.saving.mode=1
+pm.sleep_mode=1
+ro.ril.disable.power.collapse=0
+ro.vold.umsdirtyratio=20
+net.dns1=8.8.8.8
+net.dns2=8.8.4.4
+ro.HOME_APP_ADJ=1
+net.tcp.buffersize.default=4096,87380,256960, 4096, 16384,256960
+net.tcp.buffersize.wifi=4096,87380,256960,409 6,163 84,256960
+net.tcp.buffersize.umts=4096,8 7380,256960,4096,163 84,256960
+net.tcp.buffersize.gprs=4096,8 7380,256960,4096,163 84,256960
+net.tcp.buffersize.edge=4096,8 7380,256960,4096,163 84,256960
+ro.mot.eri.losalert.delay=1000
+ro.ril.power_collapse=1
+pm.sleep_mode=1
+wifi.supplicant_scan_interval=180
+ro.mot.eri.losalert.delay=1000
+persist.cust.tel.eons=1
+ro.config.hw_fast_dormancy=1
