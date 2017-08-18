@@ -32,6 +32,10 @@ ro.product.manufacturer=Google
 ro.product.locale=en-US
 ro.wifi.channels=
 ro.board.platform=msm8952
+ro.product.device=shamrock
+# Do not try to parse description, fingerprint, or thumbprint
+ro.build.description=lineage_shamrock-userdebug 6.0.1 MOB31T 61fd9ec315 test-keys
+ro.build.fingerprint=Google/lineage_shamrock/Shamrock:6.0.1/MOB31T/61fd9ec315:userdebug/test-keys
 ro.build.characteristics=default
 ro.cm.device=shamrock
 # end build properties
