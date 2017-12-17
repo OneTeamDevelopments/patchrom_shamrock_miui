@@ -30,7 +30,7 @@ Then to sync up:
 
 $ repo sync
 
-$ git clone https://gitlab.com/ThePunisherOT/patchrom_shamrock -b master shamrock
+$ git clone https://gitlab.com/Quarkzz/patchrom_shamrock -b master shamrock
 
 Build
 --------
